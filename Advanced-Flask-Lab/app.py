@@ -14,7 +14,7 @@ image_link = "https://i.imgur.com/o9Znt5k.png"
 user_bio = "Middle East Entrepreneurs of Tomorrow. Enabling the next generation of Israeli and Palestinian leaders."
 
 posts = {
-    "https://i.imgur.com/1dSgGnG.png": "The cohort of 2022!",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/MIT_logo.svg/2560px-MIT_logo.svg.png": "The cohort of 202!",
     "https://i.imgur.com/CPEvMk0.jpg": "MEET graduation!",
     "https://i.imgur.com/Cb7LK9o.jpg": "#MEET_HACKATHON",
     "https://i.imgur.com/S5A93Wt.jpg": "Class of 2024's Y1 closing event cohort"}
@@ -25,7 +25,7 @@ posts = {
 
 @app.route('/')  # '/' for the default page
 def home():
-    return render_template('index.html')
+    return render_template('index.html', image_link = image_link, user_bio = user_bio, posts = posts)
 
 
 @app.route('/about')  # '/' for the default page
